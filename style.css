@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101010;
+  color: #ffffff;
+}
+
+.hero {
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #151515, #262626);
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #f5c542;
+  font-size: 46px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  color: #d0d0d0;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 14px 0 24px;
+}
+
+.hero-btn,
+.cart-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.hero-btn {
+  background: #f5c542;
+  color: #101010;
+  padding: 13px 22px;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+section {
+  margin-bottom: 55px;
+}
+
+h2 {
+  color: #f5c542;
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 28px;
+}
+
+.about {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #cfcfcf;
+  line-height: 1.7;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: #f5c542;
+}
+
+.product-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 13px;
+  background: #2a2a2a;
+  margin-bottom: 16px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.product-card p {
+  color: #bbbbbb;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 68px;
+}
+
+.cart-btn {
+  margin-top: 14px;
+  padding: 12px 18px;
+  background: #25d366;
+  color: #ffffff;
+}
+
+.cart-btn:hover {
+  background: #1ebe5d;
+}
+
+.testimoni-box {
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  color: #cfcfcf;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  background: #1b1b1b;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card p {
+    min-height: auto;
+  }
+}
